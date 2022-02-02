@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">YoutubeTestApplication</string>
+    <string name="stories_holdings_num">Yoy have %s holdings in %s sector.</string>
+</resources>

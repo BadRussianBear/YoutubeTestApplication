@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/persistentBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_round_corners"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <include
+            android:id="@+id/viewStorySheetTopContentLayout"
+            layout="@layout/view_story_sheet_top_content_layout"/>
+        <include
+            android:id="@+id/likeshareLayout"
+            layout="@layout/view_alert_sheet_likeshare_layout"/>
+        <include
+            android:id="@+id/viewStorySheetContentLayout"
+            layout="@layout/view_story_sheet_content_layout"/>
+        <RelativeLayout
+            android:id="@+id/ownHoldingsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ownHoldings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"
+                android:background="@drawable/all_round_corners"
+                android:drawableStart="@drawable/ic_bank"
+                android:gravity="center_vertical"
+                android:padding="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contentTypeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Related Scrips"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+    <LinearLayout
+        android:id="@+id/textContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/contentHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="PayTM IPO"
+            android:layout_marginBottom="8dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="PayTM offers people a wallet and a UPI app to do their transactions digital. Be a part of #digitalIndia! "/>
+    </LinearLayout>
+</LinearLayout>
